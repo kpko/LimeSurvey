@@ -35,10 +35,10 @@
                     <br>
                     <br>
                 </p>
-                <input class="btn btn-default btn-lg" type="submit" name="cancel" value="<?php eT("Cancel") ?>" onclick="window.open('
-                    <?php echo $this->createUrl('admin/tokens/sa/index/surveyid/{$surveyid}') ?> , '_top')'" />
-                <input class="btn btn-danger btn-lg" type="submit" name="deleteTable" value="<?php eT("Delete table") ?>" onclick="window.open('
-                    <?php echo $this->createUrl("admin/tokens/sa/kill/surveyid/{$surveyid}/ok/Y") ?>', '_top')" />
+                <input class="btn btn-default btn-lg" type="submit" name="cancel" value="<?php eT("Cancel") ?>" onclick="window.open(
+                    '<?php echo $this->createUrl('admin/tokens/sa/index/surveyid/' . $surveyid) ?>' , '_top')" />
+                <input class="btn btn-danger btn-lg" type="submit" name="deleteTable" value="<?php eT("Delete table") ?>" onclick="window.open(
+                    '<?php echo $this->createUrl('admin/tokens/sa/kill/surveyid/' . $surveyid . '/ok/Y') ?>', '_top')" />
             </div>
         </div>
     </div>

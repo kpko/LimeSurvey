@@ -40,7 +40,7 @@
                     <br>
                 </p>
                 <?php echo CHtml::form(array("admin/tokens/sa/kill/surveyid/{$iSurveyId}"), 'post'); ?>
-                    <button class="btn btn-default btn-lg" type="submit" name="cancel" href="<?php echo $this->createUrl("surveyAdministration/view/surveyid/" . $iSurveyId) .; ?>">
+                    <button class="btn btn-default btn-lg" type="submit" name="cancel" href="<?php echo $this->createUrl("surveyAdministration/view/surveyid/" . $iSurveyId) ?>">
                         <?php eT("Back to main admin screen") ?>
                     </button>
                 <?php echo CHtml::endForm() ?>

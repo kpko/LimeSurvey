@@ -23,6 +23,7 @@
             'dataProvider'    => $oQuestionTheme->search(),
             'filter'          => $oQuestionTheme,
             'id'              => 'questionthemes-grid',
+            'htmlOptions'     => ['class' => 'table-responsive grid-view-ls'],
             'summaryText'     => gT('Displaying {start}-{end} of {count} result(s).') . ' ' . sprintf(gT('%s rows per page'),
                     "<div class=\"col-sm-4\" id=\"massive-action-container\">$massiveAction</div>",
                     CHtml::dropDownList('pageSize', $pageSize, App()->params['pageSizeOptions'], array('class' => 'changePageSize form-control', 'style' => 'display: inline; width: auto'))

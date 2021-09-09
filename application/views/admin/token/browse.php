@@ -27,7 +27,7 @@
 
         <!-- Grid -->
         <div class="row">
-            <div class="content-right scrolling-wrapper"    >
+            <div class="content-right">
                 <?php
                     $this->widget('ext.LimeGridView.LimeGridView', array(
                         'dataProvider' => $model->search(),
